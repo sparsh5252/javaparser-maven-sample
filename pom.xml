@@ -38,8 +38,8 @@
 	<distributionManagement>
 			<repository>
 			<uniqueVersion>false</uniqueVersion>
-			<id>com.yourorganization</id>
-			<name>javaparser-maven-sample</name>
+			<id>BillerNetwork</id>
+			<name>hgportal</name>
 			<url>file://\D:\Soft</url>
 			<layout>default</layout>
 		</repository>
