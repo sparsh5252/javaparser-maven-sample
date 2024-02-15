@@ -32,6 +32,20 @@
     mvn clean package
     java -jar target/javaparser-maven-sample-1.0-SNAPSHOT-shaded.jar
     -->
+	<scm>
+		<developerConnection>scm:git:https://github.com/sparsh5252/javaparser-maven-sample.git</developerConnection>
+	</scm>
+	
+	<distributionManagement>
+			<repository>
+			<uniqueVersion>false</uniqueVersion>
+			<id>com.yourorganization</id>
+			<name>javaparser-maven-sample</name>
+			<url>https://github.com/sparsh5252/javaparser-maven-sample.git</url>
+			<layout>default</layout>
+		</repository>
+	</distributionManagement>
+	
     <build>
         <plugins>
             <plugin>
@@ -55,6 +69,12 @@
                     </execution>
                 </executions>
             </plugin>
+			
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-release-plugin</artifactId>
+				<version>3.0.1</version>
+			</plugin>
         </plugins>
     </build>
 </project>
